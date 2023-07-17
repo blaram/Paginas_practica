@@ -160,9 +160,43 @@ img {
   font-weight: 700;
 }
 
+.iconos-caracteristicas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconos-caracteristicas li {
+  display: flex;
+}
+
+.iconos-caracteristicas li img {
+  margin-right: 2rem;
+}
+
 .ver-todas {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Contacto */
+.imagen-contacto {
+  background-image: url(../img/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-contacto {
+  flex: 1;
+  color: #ffffff;
+}
+
+.contenido-anuncio p {
+  font-size: 1.8rem;
 }
 
 
