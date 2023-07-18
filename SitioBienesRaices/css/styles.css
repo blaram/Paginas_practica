@@ -53,6 +53,10 @@ img {
   display: block !important;
 }
 
+.contenido-centrado {
+  max-width: 800px;
+}
+
 /* Botones */
 .boton {
   color: #ffffff;
@@ -143,12 +147,17 @@ img {
 .contenedor-anuncios {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .anuncio {
-  flex-basis: calc( 33.3% - 1rem );
+  flex: 0 0 calc( 33.3% - 1rem );
+  /* flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc( 33.3% - 1rem ); */
   border: 1px solid #b5b5b5;
   background-color: #f5f5f5;
+  margin-bottom: 2rem;
 }
 
 .contenido-anuncio {
@@ -169,7 +178,9 @@ img {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex: 1;
+  max-width: 50rem;
 }
 
 .iconos-caracteristicas li {
@@ -315,5 +326,12 @@ img {
   font-weight: 900;
   font-size: 2rem;
   margin: 0;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 3rem 0kk;
+}
+
+/* Anuncio */
+.resumen-propiedad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
